@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ggplot2 | </title>
+    <link>https://guoruizhong.github.io/tag/ggplot2/</link>
+      <atom:link href="https://guoruizhong.github.io/tag/ggplot2/index.xml" rel="self" type="application/rss+xml" />
+    <description>ggplot2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 22 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://guoruizhong.github.io/media/icon_huecb05cd9522e49eb64e3268b1f605901_18061_512x512_fill_lanczos_center_3.png</url>
+      <title>ggplot2</title>
+      <link>https://guoruizhong.github.io/tag/ggplot2/</link>
+    </image>
+    
+    <item>
+      <title>R friendly color palettes</title>
+      <link>https://guoruizhong.github.io/post/post/r-_color_palettes/</link>
+      <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/post/post/r-_color_palettes/</guid>
+      <description>&lt;h3 id=&#34;colorblind-friendly-palette&#34;&gt;Colorblind-friendly palette&lt;/h3&gt;
+&lt;p&gt;To use with &lt;code&gt;ggplot2&lt;/code&gt;, it is possible to store the palette in a variable, then use it later.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://raw.githubusercontent.com/guoruizhong/Images/master/20220122image-20220122115227064.png&#34; alt=&#34;image-20220122115227064&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;# The palette with grey:
+cbPalette &amp;lt;- c(&amp;quot;#999999&amp;quot;, &amp;quot;#E69F00&amp;quot;, &amp;quot;#56B4E9&amp;quot;, &amp;quot;#009E73&amp;quot;, &amp;quot;#F0E442&amp;quot;, &amp;quot;#0072B2&amp;quot;, &amp;quot;#D55E00&amp;quot;, &amp;quot;#CC79A7&amp;quot;)
+
+# The palette with black:
+cbbPalette &amp;lt;- c(&amp;quot;#000000&amp;quot;, &amp;quot;#E69F00&amp;quot;, &amp;quot;#56B4E9&amp;quot;, &amp;quot;#009E73&amp;quot;, &amp;quot;#F0E442&amp;quot;, &amp;quot;#0072B2&amp;quot;, &amp;quot;#D55E00&amp;quot;, &amp;quot;#CC79A7&amp;quot;)
+
+# To use for fills, add
+  scale_fill_manual(values=cbPalette)
+
+# To use for line and point colors, add
+  scale_colour_manual(values=cbPalette)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;colorBlindBlack8  &amp;lt;- c(&amp;quot;#000000&amp;quot;, &amp;quot;#E69F00&amp;quot;, &amp;quot;#56B4E9&amp;quot;, &amp;quot;#009E73&amp;quot;, 
+                       &amp;quot;#F0E442&amp;quot;, &amp;quot;#0072B2&amp;quot;, &amp;quot;#D55E00&amp;quot;, &amp;quot;#CC79A7&amp;quot;)
+pie(rep(1, 8), col = colorBlindBlack8)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/guoruizhong/Images/master/20220122image-20220122121043951.png&#34; alt=&#34;image-20220122121043951&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;h3 id=&#34;scientific-journal-color-palettes&#34;&gt;Scientific journal color palettes&lt;/h3&gt;
+&lt;p&gt;The color palettes are provided as ggplot2 scale functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;scale_color_npg()&lt;/code&gt; and &lt;code&gt;scale_fill_npg()&lt;/code&gt;: Nature Publishing Group color palettes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scale_color_aaas()&lt;/code&gt; and &lt;code&gt;scale_fill_aaas()&lt;/code&gt;: American Association for the Advancement of Science color palettes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scale_color_lancet()&lt;/code&gt; and &lt;code&gt;scale_fill_lancet()&lt;/code&gt;: Lancet journal color palettes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scale_color_jco()&lt;/code&gt; and &lt;code&gt;scale_fill_jco()&lt;/code&gt;: Journal of Clinical Oncology color palettes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scale_color_tron()&lt;/code&gt; and &lt;code&gt;scale_fill_tron()&lt;/code&gt;: This palette is inspired by the colors used in Tron Legacy. It is suitable for displaying data when using a dark theme.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;library(&amp;quot;ggplot2&amp;quot;)
+library(&amp;quot;ggsci&amp;quot;)
+# Change area fill color. JCO palette
+ggplot(iris, aes(Species, Sepal.Length)) +
+  geom_boxplot(aes(fill = Species)) +
+  scale_fill_jco()+
+  theme_classic() +
+  theme(legend.position = &amp;quot;top&amp;quot;)
+
+# Change point color and the confidence band fill color. 
+# Use tron palette on dark theme
+ggplot(iris, aes(Sepal.Length, Sepal.Width)) +
+  geom_point(aes(color = Species)) +
+  geom_smooth(aes(color = Species, fill = Species)) + 
+  scale_color_tron()+
+  scale_fill_tron()+
+  theme_dark() +
+  theme(
+    legend.position = &amp;quot;top&amp;quot;,
+    panel.background = element_rect(fill = &amp;quot;#2D2D2D&amp;quot;),
+    legend.key = element_rect(fill = &amp;quot;#2D2D2D&amp;quot;)
+    )
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;commonly-used-color-palettes-r-packages&#34;&gt;Commonly used color palettes R packages:&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;install.packages(&amp;quot;viridis&amp;quot;) # Viridis color scales
+install.packages(&amp;quot;wesanderson&amp;quot;) # Wes Anderson color palettes
+install.packages(&amp;quot;RColorBrewer&amp;quot;) # Colorbrewer palettes
+install.packages(&amp;quot;ggplot2&amp;quot;) # Grey color palettes
+install.packages(&amp;quot;ggsci&amp;quot;) # Scientific journal color palettes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Generate a basic &lt;code&gt;ggplot2&lt;/code&gt;. Map the color argument to a factor or grouping variable:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;p &amp;lt;- ggplot(iris, aes(Sepal.Length, Sepal.Width))+
+  geom_point(aes(color = Species))
+p
+
+# Set the color palette manually using a custom color scale:
+p + scale_color_manual(values = c(&amp;quot;#00AFBB&amp;quot;, &amp;quot;#E7B800&amp;quot;, &amp;quot;#FC4E07&amp;quot;))
+
+# Use color blind-friendly palette:
+cbp1 &amp;lt;- c(&amp;quot;#999999&amp;quot;, &amp;quot;#E69F00&amp;quot;, &amp;quot;#56B4E9&amp;quot;, &amp;quot;#009E73&amp;quot;,
+          &amp;quot;#F0E442&amp;quot;, &amp;quot;#0072B2&amp;quot;, &amp;quot;#D55E00&amp;quot;, &amp;quot;#CC79A7&amp;quot;)
+p + scale_color_manual(values = cbp1)
+
+# Use RColorBrewer palettes:
+p + scale_color_brewer(palette = &amp;quot;Dark2&amp;quot;)
+
+# Use viridis color scales:
+library(viridis)
+p + scale_color_viridis(discrete = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cookbook-r.com/Graphs/Colors_%28ggplot2%29/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sthda.com/english/wiki/colors-in-r&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sthda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/57153428/r-plot-color-combinations-that-are-colorblind-accessible&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;stackoverflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

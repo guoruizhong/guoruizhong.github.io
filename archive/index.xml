@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts Archive | </title>
+    <link>https://guoruizhong.github.io/archive/</link>
+      <atom:link href="https://guoruizhong.github.io/archive/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts Archive</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://guoruizhong.github.io/media/icon_huecb05cd9522e49eb64e3268b1f605901_18061_512x512_fill_lanczos_center_3.png</url>
+      <title>Posts Archive</title>
+      <link>https://guoruizhong.github.io/archive/</link>
+    </image>
+    
+  </channel>
+</rss>

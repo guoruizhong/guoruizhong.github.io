@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Letters | </title>
+    <link>https://guoruizhong.github.io/tag/letters/</link>
+      <atom:link href="https://guoruizhong.github.io/tag/letters/index.xml" rel="self" type="application/rss+xml" />
+    <description>Letters</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://guoruizhong.github.io/media/icon_huecb05cd9522e49eb64e3268b1f605901_18061_512x512_fill_lanczos_center_3.png</url>
+      <title>Letters</title>
+      <link>https://guoruizhong.github.io/tag/letters/</link>
+    </image>
+    
+    <item>
+      <title>Input greek letters using Markdown</title>
+      <link>https://guoruizhong.github.io/post/post/greek_letters/</link>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/post/post/greek_letters/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Capital letter&lt;/th&gt;
+&lt;th&gt;Markdown&lt;/th&gt;
+&lt;th&gt;Lowercase&lt;/th&gt;
+&lt;th&gt;Markdown&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;A&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;α \alpha&lt;em&gt;α&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\alpha&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;B&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;β \beta&lt;em&gt;β&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\beta&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Γ&lt;/td&gt;
+&lt;td&gt;\Gamma&lt;/td&gt;
+&lt;td&gt;γ \gamma&lt;em&gt;γ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\gamma&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Δ&lt;/td&gt;
+&lt;td&gt;\Delta&lt;/td&gt;
+&lt;td&gt;δ \delta&lt;em&gt;δ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\delta&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;E&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;E&lt;/td&gt;
+&lt;td&gt;ϵ \epsilon&lt;em&gt;ϵ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\epsilon&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;ε \varepsilon&lt;em&gt;ε&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\varepsilon&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Z&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;Z&lt;/td&gt;
+&lt;td&gt;ζ \zeta&lt;em&gt;ζ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\zeta&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;H&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;H&lt;/td&gt;
+&lt;td&gt;η \eta&lt;em&gt;η&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\eta&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Θ&lt;/td&gt;
+&lt;td&gt;\Theta&lt;/td&gt;
+&lt;td&gt;θ \theta&lt;em&gt;θ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\theta&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;I&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;I&lt;/td&gt;
+&lt;td&gt;ι \iota&lt;em&gt;ι&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\iota&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;K&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;K&lt;/td&gt;
+&lt;td&gt;κ \kappa&lt;em&gt;κ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\kappa&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Λ&lt;/td&gt;
+&lt;td&gt;\Lambda&lt;/td&gt;
+&lt;td&gt;λ \lambda&lt;em&gt;λ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\lambda&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;M&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;M&lt;/td&gt;
+&lt;td&gt;μ \mu&lt;em&gt;μ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\mu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;N&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;ν \nu&lt;em&gt;ν&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\nu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ξ&lt;/td&gt;
+&lt;td&gt;\Xi&lt;/td&gt;
+&lt;td&gt;ξ \xi&lt;em&gt;ξ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\xi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;O&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;O&lt;/td&gt;
+&lt;td&gt;ο \omicron&lt;em&gt;ο&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\omicron&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Π&lt;/td&gt;
+&lt;td&gt;\Pi&lt;/td&gt;
+&lt;td&gt;π \pi&lt;em&gt;π&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\pi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;P&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;P&lt;/td&gt;
+&lt;td&gt;ρ \rho&lt;em&gt;ρ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\rho&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Σ&lt;/td&gt;
+&lt;td&gt;\Sigma&lt;/td&gt;
+&lt;td&gt;σ \sigma&lt;em&gt;σ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\sigma&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;T&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;T&lt;/td&gt;
+&lt;td&gt;τ \tau&lt;em&gt;τ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\tau&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Υ&lt;/td&gt;
+&lt;td&gt;\Upsilon&lt;/td&gt;
+&lt;td&gt;υ \upsilon&lt;em&gt;υ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\upsilon&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Φ&lt;/td&gt;
+&lt;td&gt;\Phi&lt;/td&gt;
+&lt;td&gt;ϕ \phi&lt;em&gt;ϕ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\phi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;φ \varphi&lt;em&gt;φ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\varphi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;X&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;X&lt;/td&gt;
+&lt;td&gt;χ \chi&lt;em&gt;χ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\chi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ψ&lt;/td&gt;
+&lt;td&gt;\Psi&lt;/td&gt;
+&lt;td&gt;ψ \psi&lt;em&gt;ψ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\psi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ω&lt;/td&gt;
+&lt;td&gt;\Omega&lt;/td&gt;
+&lt;td&gt;ω \omega&lt;em&gt;ω&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\omega&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

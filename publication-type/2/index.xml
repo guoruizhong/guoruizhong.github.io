@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | </title>
+    <link>https://guoruizhong.github.io/publication-type/2/</link>
+      <atom:link href="https://guoruizhong.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://guoruizhong.github.io/media/icon_huecb05cd9522e49eb64e3268b1f605901_18061_512x512_fill_lanczos_center_3.png</url>
+      <title>2</title>
+      <link>https://guoruizhong.github.io/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>Structure-based virtual screening of CYP1A1 inhibitors: towards rapid tier-one assessment of potential developmental toxicants</title>
+      <link>https://guoruizhong.github.io/publication/goh-structure-based-2021/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/publication/goh-structure-based-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development of a fluorescence-based assay for screening of urate transporter 1 inhibitors using 6-carboxyfluorescein</title>
+      <link>https://guoruizhong.github.io/publication/zhou-development-2021/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/publication/zhou-development-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cas12a-Based On-Site and Rapid Nucleic Acid Detection of African Swine Fever</title>
+      <link>https://guoruizhong.github.io/publication/bai-cas-12-a-based-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/publication/bai-cas-12-a-based-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improved defined approaches for predicting skin sensitization hazard and potency in humans</title>
+      <link>https://guoruizhong.github.io/publication/li-improved-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/publication/li-improved-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Studies on oral bioavailability and first-pass metabolism of withaferin A in rats using LC–MS/MS and Q-TRAP</title>
+      <link>https://guoruizhong.github.io/publication/dai-studies-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/publication/dai-studies-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Advancing the predictivity of skin sensitization by applying a novel HMOX1 reporter system</title>
+      <link>https://guoruizhong.github.io/publication/zhong-advancing-2018/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/publication/zhong-advancing-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inkscape | </title>
+    <link>https://guoruizhong.github.io/tag/inkscape/</link>
+      <atom:link href="https://guoruizhong.github.io/tag/inkscape/index.xml" rel="self" type="application/rss+xml" />
+    <description>Inkscape</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 30 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://guoruizhong.github.io/media/icon_huecb05cd9522e49eb64e3268b1f605901_18061_512x512_fill_lanczos_center_3.png</url>
+      <title>Inkscape</title>
+      <link>https://guoruizhong.github.io/tag/inkscape/</link>
+    </image>
+    
+    <item>
+      <title>Greek Unicode for Inkscape</title>
+      <link>https://guoruizhong.github.io/post/post/greek_unicode_inkscape/</link>
+      <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/post/post/greek_unicode_inkscape/</guid>
+      <description>&lt;p&gt;To get Greek letters in Inkscape, go into text mode and type Ctrl+U and the 4-digit unicode for the desired Greek letter.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Greek letter&lt;/th&gt;
+&lt;th&gt;Lower case&lt;/th&gt;
+&lt;th&gt;Unicode&lt;/th&gt;
+&lt;th&gt;Upper case&lt;/th&gt;
+&lt;th&gt;Unicode&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;alpha&lt;/td&gt;
+&lt;td&gt;α&lt;/td&gt;
+&lt;td&gt;03b1&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;0391&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;beta&lt;/td&gt;
+&lt;td&gt;β&lt;/td&gt;
+&lt;td&gt;03b2&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;0392&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gamma&lt;/td&gt;
+&lt;td&gt;γ&lt;/td&gt;
+&lt;td&gt;03b3&lt;/td&gt;
+&lt;td&gt;Γ&lt;/td&gt;
+&lt;td&gt;0393&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;delta&lt;/td&gt;
+&lt;td&gt;δ&lt;/td&gt;
+&lt;td&gt;03b4&lt;/td&gt;
+&lt;td&gt;Δ&lt;/td&gt;
+&lt;td&gt;0394&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;epsilon&lt;/td&gt;
+&lt;td&gt;ϵ&lt;/td&gt;
+&lt;td&gt;03b5&lt;/td&gt;
+&lt;td&gt;E&lt;/td&gt;
+&lt;td&gt;0395&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;zeta&lt;/td&gt;
+&lt;td&gt;ζ&lt;/td&gt;
+&lt;td&gt;03b6&lt;/td&gt;
+&lt;td&gt;Z&lt;/td&gt;
+&lt;td&gt;0396&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eta&lt;/td&gt;
+&lt;td&gt;η&lt;/td&gt;
+&lt;td&gt;03b7&lt;/td&gt;
+&lt;td&gt;H&lt;/td&gt;
+&lt;td&gt;0397&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;theta&lt;/td&gt;
+&lt;td&gt;θ&lt;/td&gt;
+&lt;td&gt;03b8&lt;/td&gt;
+&lt;td&gt;Θ&lt;/td&gt;
+&lt;td&gt;0398&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iota&lt;/td&gt;
+&lt;td&gt;ι&lt;/td&gt;
+&lt;td&gt;03b9&lt;/td&gt;
+&lt;td&gt;I&lt;/td&gt;
+&lt;td&gt;0399&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;kappa&lt;/td&gt;
+&lt;td&gt;κ&lt;/td&gt;
+&lt;td&gt;03ba&lt;/td&gt;
+&lt;td&gt;K&lt;/td&gt;
+&lt;td&gt;039a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;lambda&lt;/td&gt;
+&lt;td&gt;λ&lt;/td&gt;
+&lt;td&gt;03bb&lt;/td&gt;
+&lt;td&gt;Λ&lt;/td&gt;
+&lt;td&gt;039b&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mu&lt;/td&gt;
+&lt;td&gt;μ&lt;/td&gt;
+&lt;td&gt;03bc&lt;/td&gt;
+&lt;td&gt;M&lt;/td&gt;
+&lt;td&gt;039c&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;nu&lt;/td&gt;
+&lt;td&gt;ν&lt;/td&gt;
+&lt;td&gt;03bd&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;039d&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xi&lt;/td&gt;
+&lt;td&gt;ξ&lt;/td&gt;
+&lt;td&gt;03be&lt;/td&gt;
+&lt;td&gt;Ξ&lt;/td&gt;
+&lt;td&gt;039e&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;omicron&lt;/td&gt;
+&lt;td&gt;o&lt;/td&gt;
+&lt;td&gt;03bf&lt;/td&gt;
+&lt;td&gt;O&lt;/td&gt;
+&lt;td&gt;039f&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pi&lt;/td&gt;
+&lt;td&gt;π&lt;/td&gt;
+&lt;td&gt;03c0&lt;/td&gt;
+&lt;td&gt;Π&lt;/td&gt;
+&lt;td&gt;03a0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rho&lt;/td&gt;
+&lt;td&gt;ρ&lt;/td&gt;
+&lt;td&gt;03c1&lt;/td&gt;
+&lt;td&gt;P&lt;/td&gt;
+&lt;td&gt;03a1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sigma&lt;/td&gt;
+&lt;td&gt;σ&lt;/td&gt;
+&lt;td&gt;03c3&lt;/td&gt;
+&lt;td&gt;Σ&lt;/td&gt;
+&lt;td&gt;03a3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tau&lt;/td&gt;
+&lt;td&gt;τ&lt;/td&gt;
+&lt;td&gt;03c4&lt;/td&gt;
+&lt;td&gt;T&lt;/td&gt;
+&lt;td&gt;03a4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;upsilon&lt;/td&gt;
+&lt;td&gt;υ&lt;/td&gt;
+&lt;td&gt;03c5&lt;/td&gt;
+&lt;td&gt;ϒ&lt;/td&gt;
+&lt;td&gt;03a5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;phi&lt;/td&gt;
+&lt;td&gt;ϕ&lt;/td&gt;
+&lt;td&gt;03c6&lt;/td&gt;
+&lt;td&gt;Φ&lt;/td&gt;
+&lt;td&gt;03a6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;chi&lt;/td&gt;
+&lt;td&gt;χ&lt;/td&gt;
+&lt;td&gt;03c7&lt;/td&gt;
+&lt;td&gt;X&lt;/td&gt;
+&lt;td&gt;03a7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;psi&lt;/td&gt;
+&lt;td&gt;ψ&lt;/td&gt;
+&lt;td&gt;03c8&lt;/td&gt;
+&lt;td&gt;Ψ&lt;/td&gt;
+&lt;td&gt;03a8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;omega&lt;/td&gt;
+&lt;td&gt;ω&lt;/td&gt;
+&lt;td&gt;03c9&lt;/td&gt;
+&lt;td&gt;Ω&lt;/td&gt;
+&lt;td&gt;03a9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Reference:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://kestrel.nmt.edu/~raymond/software/howtos/greekscape.xhtml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Greek Unicode and Inkscape&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inkscape.org/doc/keys.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Inkscape keyboard and mouse reference&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

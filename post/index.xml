@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post | </title>
+    <link>https://guoruizhong.github.io/post/</link>
+      <atom:link href="https://guoruizhong.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Post</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 30 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://guoruizhong.github.io/media/icon_huecb05cd9522e49eb64e3268b1f605901_18061_512x512_fill_lanczos_center_3.png</url>
+      <title>Post</title>
+      <link>https://guoruizhong.github.io/post/</link>
+    </image>
+    
+    <item>
+      <title>Github Git CheatSheet</title>
+      <link>https://guoruizhong.github.io/post/post/github_cheatsheet/</link>
+      <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/post/post/github_cheatsheet/</guid>
+      <description>&lt;img src=&#34;https://raw.githubusercontent.com/guoruizhong/Images/master/20220130ae380c79400f164b3607a9a9c00f2e50.jpg&#34; alt=&#34;ae380c79400f164b3607a9a9c00f2e50&#34; style=&#34;zoom:200%;&#34; /&gt;
+&lt;h3 id=&#34;setup&#34;&gt;&lt;strong&gt;Setup&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Configuring user information used across all local repositories&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;git config --global user.name “[firstname lastname]” &lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;set a name that is identifiable for credit when review version history&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git config --global user.email “[valid-email]” &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;set an email address that will be associated with each history marker&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git config --global color.ui auto &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;set automatic command line coloring for Git for easy reviewing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;setup--init&#34;&gt;&lt;strong&gt;Setup &amp;amp; Init&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Configuring user information, initializing and cloning repositories&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;git init 	&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;initialize an existing directory as a Git repository&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git clone [url] &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;retrieve an entire repository from a hosted location via URL&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;branch--merge&#34;&gt;&lt;strong&gt;Branch &amp;amp; Merge&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Isolating work in branches, changing context, and integrating changes&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;git branch&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;list your branches. a * will appear next to the currently active branch&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git branch [branch-name]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;create a new branch at the current commit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git checkout&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;switch to another branch and check it out into your working directory&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git merge [branch]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;merge the specified branch’s history into the current one&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git log&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;show all commits in the current branch’s history&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;share--update&#34;&gt;&lt;strong&gt;Share &amp;amp; Update&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Retrieving updates from another repository and updating local repos&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;git remote add [alias] [url]&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;add a git URL as an alias&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git fetch [alias]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;fetch down all the branches from that Git remote&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git merge [alias]/[branch]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;merge a remote branch into your current branch to bring it up to date&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git push [alias] [branch]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Transmit local branch commits to the remote repository branch&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git pull&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;fetch and merge any commits from the tracking remote branch&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;stage--snapshot&#34;&gt;&lt;strong&gt;Stage &amp;amp; Snapshot&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Working with snapshots and the Git staging area&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;git status&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;show modified files in working directory, staged for your next commit&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git add [file]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;add a file as it looks now to your next commit (stage)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git reset [file]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;unstage a file while retaining the changes in working directory&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git diff&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;diff of what is changed but not staged&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git diff --staged&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;diff of what is staged but not yet committed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git commit -m “[descriptive message]”&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;commit your staged content as a new commit snapshot&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;inspect--compare&#34;&gt;&lt;strong&gt;Inspect &amp;amp; Compare&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Examining logs, diffs and object information&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;git log&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;show the commit history for the currently active branch&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git log branchB..branchA&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;show the commits on branchA that are not on branchB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git log --follow [file]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;show the commits that changed file, even across renames&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git diff branchB...branchA&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;show the diff of what is in branchA that is not in branchB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git show [SHA]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;show any object in Git in human-readable format&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;tracking-path-changes&#34;&gt;&lt;strong&gt;Tracking Path Changes&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Versioning file removes and path changes&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;git rm [file]&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;delete the file from project and stage the removal for commit&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git mv [existing-path] [new-path]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;change an existing file path and stage the move&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git log --stat -M&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;show all commit logs with indication of any paths that moved&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;igorning-patterns&#34;&gt;&lt;strong&gt;Igorning Patterns&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Preventing unintentional staging or commiting of files&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;logs/ .notes pattern/&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;Save a file with desired patterns as .gitignore with either direct string matches or wildcard globs.&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git config --global core.excludesfile [file]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;system wide ignore pattern for all local repositories&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;retwrite-history&#34;&gt;&lt;strong&gt;Retwrite History&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Rewriting branches, updating commits and clearing history&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;git rebase [branch]&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;apply any commits of current branch ahead of specified one&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git reset --hard [commit]&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;clear staging area, rewrite working tree from specified commit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;tempoary-commits&#34;&gt;&lt;strong&gt;Tempoary Commits&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Temporarily store modified, tracked files in order to change branches&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code&gt;git stash&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;Save modified and staged changes&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git stash list&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;list stack-order of stashed file changes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git stash pop&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;write working from top of stash stack&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;git stash drop&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;discard the changes from top of stash stack&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Reference: &lt;a href=&#34;https://www.runoob.com/git/git-basic-operations.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;runoob.com&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Greek Unicode for Inkscape</title>
+      <link>https://guoruizhong.github.io/post/post/greek_unicode_inkscape/</link>
+      <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/post/post/greek_unicode_inkscape/</guid>
+      <description>&lt;p&gt;To get Greek letters in Inkscape, go into text mode and type Ctrl+U and the 4-digit unicode for the desired Greek letter.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Greek letter&lt;/th&gt;
+&lt;th&gt;Lower case&lt;/th&gt;
+&lt;th&gt;Unicode&lt;/th&gt;
+&lt;th&gt;Upper case&lt;/th&gt;
+&lt;th&gt;Unicode&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;alpha&lt;/td&gt;
+&lt;td&gt;α&lt;/td&gt;
+&lt;td&gt;03b1&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;0391&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;beta&lt;/td&gt;
+&lt;td&gt;β&lt;/td&gt;
+&lt;td&gt;03b2&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;0392&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gamma&lt;/td&gt;
+&lt;td&gt;γ&lt;/td&gt;
+&lt;td&gt;03b3&lt;/td&gt;
+&lt;td&gt;Γ&lt;/td&gt;
+&lt;td&gt;0393&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;delta&lt;/td&gt;
+&lt;td&gt;δ&lt;/td&gt;
+&lt;td&gt;03b4&lt;/td&gt;
+&lt;td&gt;Δ&lt;/td&gt;
+&lt;td&gt;0394&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;epsilon&lt;/td&gt;
+&lt;td&gt;ϵ&lt;/td&gt;
+&lt;td&gt;03b5&lt;/td&gt;
+&lt;td&gt;E&lt;/td&gt;
+&lt;td&gt;0395&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;zeta&lt;/td&gt;
+&lt;td&gt;ζ&lt;/td&gt;
+&lt;td&gt;03b6&lt;/td&gt;
+&lt;td&gt;Z&lt;/td&gt;
+&lt;td&gt;0396&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;eta&lt;/td&gt;
+&lt;td&gt;η&lt;/td&gt;
+&lt;td&gt;03b7&lt;/td&gt;
+&lt;td&gt;H&lt;/td&gt;
+&lt;td&gt;0397&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;theta&lt;/td&gt;
+&lt;td&gt;θ&lt;/td&gt;
+&lt;td&gt;03b8&lt;/td&gt;
+&lt;td&gt;Θ&lt;/td&gt;
+&lt;td&gt;0398&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;iota&lt;/td&gt;
+&lt;td&gt;ι&lt;/td&gt;
+&lt;td&gt;03b9&lt;/td&gt;
+&lt;td&gt;I&lt;/td&gt;
+&lt;td&gt;0399&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;kappa&lt;/td&gt;
+&lt;td&gt;κ&lt;/td&gt;
+&lt;td&gt;03ba&lt;/td&gt;
+&lt;td&gt;K&lt;/td&gt;
+&lt;td&gt;039a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;lambda&lt;/td&gt;
+&lt;td&gt;λ&lt;/td&gt;
+&lt;td&gt;03bb&lt;/td&gt;
+&lt;td&gt;Λ&lt;/td&gt;
+&lt;td&gt;039b&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mu&lt;/td&gt;
+&lt;td&gt;μ&lt;/td&gt;
+&lt;td&gt;03bc&lt;/td&gt;
+&lt;td&gt;M&lt;/td&gt;
+&lt;td&gt;039c&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;nu&lt;/td&gt;
+&lt;td&gt;ν&lt;/td&gt;
+&lt;td&gt;03bd&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;039d&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xi&lt;/td&gt;
+&lt;td&gt;ξ&lt;/td&gt;
+&lt;td&gt;03be&lt;/td&gt;
+&lt;td&gt;Ξ&lt;/td&gt;
+&lt;td&gt;039e&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;omicron&lt;/td&gt;
+&lt;td&gt;o&lt;/td&gt;
+&lt;td&gt;03bf&lt;/td&gt;
+&lt;td&gt;O&lt;/td&gt;
+&lt;td&gt;039f&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pi&lt;/td&gt;
+&lt;td&gt;π&lt;/td&gt;
+&lt;td&gt;03c0&lt;/td&gt;
+&lt;td&gt;Π&lt;/td&gt;
+&lt;td&gt;03a0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rho&lt;/td&gt;
+&lt;td&gt;ρ&lt;/td&gt;
+&lt;td&gt;03c1&lt;/td&gt;
+&lt;td&gt;P&lt;/td&gt;
+&lt;td&gt;03a1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sigma&lt;/td&gt;
+&lt;td&gt;σ&lt;/td&gt;
+&lt;td&gt;03c3&lt;/td&gt;
+&lt;td&gt;Σ&lt;/td&gt;
+&lt;td&gt;03a3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tau&lt;/td&gt;
+&lt;td&gt;τ&lt;/td&gt;
+&lt;td&gt;03c4&lt;/td&gt;
+&lt;td&gt;T&lt;/td&gt;
+&lt;td&gt;03a4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;upsilon&lt;/td&gt;
+&lt;td&gt;υ&lt;/td&gt;
+&lt;td&gt;03c5&lt;/td&gt;
+&lt;td&gt;ϒ&lt;/td&gt;
+&lt;td&gt;03a5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;phi&lt;/td&gt;
+&lt;td&gt;ϕ&lt;/td&gt;
+&lt;td&gt;03c6&lt;/td&gt;
+&lt;td&gt;Φ&lt;/td&gt;
+&lt;td&gt;03a6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;chi&lt;/td&gt;
+&lt;td&gt;χ&lt;/td&gt;
+&lt;td&gt;03c7&lt;/td&gt;
+&lt;td&gt;X&lt;/td&gt;
+&lt;td&gt;03a7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;psi&lt;/td&gt;
+&lt;td&gt;ψ&lt;/td&gt;
+&lt;td&gt;03c8&lt;/td&gt;
+&lt;td&gt;Ψ&lt;/td&gt;
+&lt;td&gt;03a8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;omega&lt;/td&gt;
+&lt;td&gt;ω&lt;/td&gt;
+&lt;td&gt;03c9&lt;/td&gt;
+&lt;td&gt;Ω&lt;/td&gt;
+&lt;td&gt;03a9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Reference:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://kestrel.nmt.edu/~raymond/software/howtos/greekscape.xhtml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Greek Unicode and Inkscape&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inkscape.org/doc/keys.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Inkscape keyboard and mouse reference&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>R friendly color palettes</title>
+      <link>https://guoruizhong.github.io/post/post/r-_color_palettes/</link>
+      <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/post/post/r-_color_palettes/</guid>
+      <description>&lt;h3 id=&#34;colorblind-friendly-palette&#34;&gt;Colorblind-friendly palette&lt;/h3&gt;
+&lt;p&gt;To use with &lt;code&gt;ggplot2&lt;/code&gt;, it is possible to store the palette in a variable, then use it later.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://raw.githubusercontent.com/guoruizhong/Images/master/20220122image-20220122115227064.png&#34; alt=&#34;image-20220122115227064&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;# The palette with grey:
+cbPalette &amp;lt;- c(&amp;quot;#999999&amp;quot;, &amp;quot;#E69F00&amp;quot;, &amp;quot;#56B4E9&amp;quot;, &amp;quot;#009E73&amp;quot;, &amp;quot;#F0E442&amp;quot;, &amp;quot;#0072B2&amp;quot;, &amp;quot;#D55E00&amp;quot;, &amp;quot;#CC79A7&amp;quot;)
+
+# The palette with black:
+cbbPalette &amp;lt;- c(&amp;quot;#000000&amp;quot;, &amp;quot;#E69F00&amp;quot;, &amp;quot;#56B4E9&amp;quot;, &amp;quot;#009E73&amp;quot;, &amp;quot;#F0E442&amp;quot;, &amp;quot;#0072B2&amp;quot;, &amp;quot;#D55E00&amp;quot;, &amp;quot;#CC79A7&amp;quot;)
+
+# To use for fills, add
+  scale_fill_manual(values=cbPalette)
+
+# To use for line and point colors, add
+  scale_colour_manual(values=cbPalette)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;colorBlindBlack8  &amp;lt;- c(&amp;quot;#000000&amp;quot;, &amp;quot;#E69F00&amp;quot;, &amp;quot;#56B4E9&amp;quot;, &amp;quot;#009E73&amp;quot;, 
+                       &amp;quot;#F0E442&amp;quot;, &amp;quot;#0072B2&amp;quot;, &amp;quot;#D55E00&amp;quot;, &amp;quot;#CC79A7&amp;quot;)
+pie(rep(1, 8), col = colorBlindBlack8)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/guoruizhong/Images/master/20220122image-20220122121043951.png&#34; alt=&#34;image-20220122121043951&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;h3 id=&#34;scientific-journal-color-palettes&#34;&gt;Scientific journal color palettes&lt;/h3&gt;
+&lt;p&gt;The color palettes are provided as ggplot2 scale functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;scale_color_npg()&lt;/code&gt; and &lt;code&gt;scale_fill_npg()&lt;/code&gt;: Nature Publishing Group color palettes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scale_color_aaas()&lt;/code&gt; and &lt;code&gt;scale_fill_aaas()&lt;/code&gt;: American Association for the Advancement of Science color palettes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scale_color_lancet()&lt;/code&gt; and &lt;code&gt;scale_fill_lancet()&lt;/code&gt;: Lancet journal color palettes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scale_color_jco()&lt;/code&gt; and &lt;code&gt;scale_fill_jco()&lt;/code&gt;: Journal of Clinical Oncology color palettes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scale_color_tron()&lt;/code&gt; and &lt;code&gt;scale_fill_tron()&lt;/code&gt;: This palette is inspired by the colors used in Tron Legacy. It is suitable for displaying data when using a dark theme.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;library(&amp;quot;ggplot2&amp;quot;)
+library(&amp;quot;ggsci&amp;quot;)
+# Change area fill color. JCO palette
+ggplot(iris, aes(Species, Sepal.Length)) +
+  geom_boxplot(aes(fill = Species)) +
+  scale_fill_jco()+
+  theme_classic() +
+  theme(legend.position = &amp;quot;top&amp;quot;)
+
+# Change point color and the confidence band fill color. 
+# Use tron palette on dark theme
+ggplot(iris, aes(Sepal.Length, Sepal.Width)) +
+  geom_point(aes(color = Species)) +
+  geom_smooth(aes(color = Species, fill = Species)) + 
+  scale_color_tron()+
+  scale_fill_tron()+
+  theme_dark() +
+  theme(
+    legend.position = &amp;quot;top&amp;quot;,
+    panel.background = element_rect(fill = &amp;quot;#2D2D2D&amp;quot;),
+    legend.key = element_rect(fill = &amp;quot;#2D2D2D&amp;quot;)
+    )
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;commonly-used-color-palettes-r-packages&#34;&gt;Commonly used color palettes R packages:&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;install.packages(&amp;quot;viridis&amp;quot;) # Viridis color scales
+install.packages(&amp;quot;wesanderson&amp;quot;) # Wes Anderson color palettes
+install.packages(&amp;quot;RColorBrewer&amp;quot;) # Colorbrewer palettes
+install.packages(&amp;quot;ggplot2&amp;quot;) # Grey color palettes
+install.packages(&amp;quot;ggsci&amp;quot;) # Scientific journal color palettes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Generate a basic &lt;code&gt;ggplot2&lt;/code&gt;. Map the color argument to a factor or grouping variable:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;p &amp;lt;- ggplot(iris, aes(Sepal.Length, Sepal.Width))+
+  geom_point(aes(color = Species))
+p
+
+# Set the color palette manually using a custom color scale:
+p + scale_color_manual(values = c(&amp;quot;#00AFBB&amp;quot;, &amp;quot;#E7B800&amp;quot;, &amp;quot;#FC4E07&amp;quot;))
+
+# Use color blind-friendly palette:
+cbp1 &amp;lt;- c(&amp;quot;#999999&amp;quot;, &amp;quot;#E69F00&amp;quot;, &amp;quot;#56B4E9&amp;quot;, &amp;quot;#009E73&amp;quot;,
+          &amp;quot;#F0E442&amp;quot;, &amp;quot;#0072B2&amp;quot;, &amp;quot;#D55E00&amp;quot;, &amp;quot;#CC79A7&amp;quot;)
+p + scale_color_manual(values = cbp1)
+
+# Use RColorBrewer palettes:
+p + scale_color_brewer(palette = &amp;quot;Dark2&amp;quot;)
+
+# Use viridis color scales:
+library(viridis)
+p + scale_color_viridis(discrete = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cookbook-r.com/Graphs/Colors_%28ggplot2%29/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sthda.com/english/wiki/colors-in-r&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sthda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/57153428/r-plot-color-combinations-that-are-colorblind-accessible&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;stackoverflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>Crop image and add scale bar with ImageJ/Fiji</title>
+      <link>https://guoruizhong.github.io/post/post/crop_image_with-_imagej/</link>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/post/post/crop_image_with-_imagej/</guid>
+      <description>&lt;h3 id=&#34;crop-images-to-a-given-physical-size&#34;&gt;Crop images to a given physical size&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Edit -&amp;gt; Selection -&amp;gt; Specify&lt;/li&gt;
+&lt;li&gt;image -&amp;gt; Crop&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;https://i.loli.net/2021/06/06/JZyi2dPv8UHBqSf.png&#34;  /&gt;
+&lt;h3 id=&#34;crop-same-area-from-different-images&#34;&gt;Crop same area from different images&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Select the area on the first image&lt;/li&gt;
+&lt;li&gt;Analyze -&amp;gt; Tools -&amp;gt; ROI manager -&amp;gt; Add [t]&lt;/li&gt;
+&lt;li&gt;Click the second image, select and click the parameters on the ROI manager&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;https://i.loli.net/2021/06/06/KQEerVOzL5RiaFh.png&#34;  /&gt;
+&lt;h3 id=&#34;set-scale-and-add-scale-bar&#34;&gt;Set scale and add scale bar&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Analyze -&amp;gt; Set Scale (5uM = 16 pixels, if exported as 4x, then 5uM = 64 pixels)&lt;/li&gt;
+&lt;li&gt;Analyze -&amp;gt; Tools -&amp;gt; Scale bar&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;https://i.loli.net/2021/06/06/drEXlwJqaRmubGP.png&#34;  /&gt;
+&lt;img src=&#34;https://i.loli.net/2021/06/06/I9HPjqusgmLyeTh.png&#34;  /&gt;</description>
+    </item>
+    
+    <item>
+      <title>Input greek letters using Markdown</title>
+      <link>https://guoruizhong.github.io/post/post/greek_letters/</link>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/post/post/greek_letters/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Capital letter&lt;/th&gt;
+&lt;th&gt;Markdown&lt;/th&gt;
+&lt;th&gt;Lowercase&lt;/th&gt;
+&lt;th&gt;Markdown&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;A&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;α \alpha&lt;em&gt;α&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\alpha&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;B&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;β \beta&lt;em&gt;β&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\beta&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Γ&lt;/td&gt;
+&lt;td&gt;\Gamma&lt;/td&gt;
+&lt;td&gt;γ \gamma&lt;em&gt;γ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\gamma&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Δ&lt;/td&gt;
+&lt;td&gt;\Delta&lt;/td&gt;
+&lt;td&gt;δ \delta&lt;em&gt;δ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\delta&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;E&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;E&lt;/td&gt;
+&lt;td&gt;ϵ \epsilon&lt;em&gt;ϵ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\epsilon&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;ε \varepsilon&lt;em&gt;ε&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\varepsilon&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Z&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;Z&lt;/td&gt;
+&lt;td&gt;ζ \zeta&lt;em&gt;ζ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\zeta&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;H&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;H&lt;/td&gt;
+&lt;td&gt;η \eta&lt;em&gt;η&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\eta&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Θ&lt;/td&gt;
+&lt;td&gt;\Theta&lt;/td&gt;
+&lt;td&gt;θ \theta&lt;em&gt;θ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\theta&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;I&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;I&lt;/td&gt;
+&lt;td&gt;ι \iota&lt;em&gt;ι&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\iota&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;K&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;K&lt;/td&gt;
+&lt;td&gt;κ \kappa&lt;em&gt;κ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\kappa&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Λ&lt;/td&gt;
+&lt;td&gt;\Lambda&lt;/td&gt;
+&lt;td&gt;λ \lambda&lt;em&gt;λ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\lambda&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;M&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;M&lt;/td&gt;
+&lt;td&gt;μ \mu&lt;em&gt;μ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\mu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;N&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;ν \nu&lt;em&gt;ν&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\nu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ξ&lt;/td&gt;
+&lt;td&gt;\Xi&lt;/td&gt;
+&lt;td&gt;ξ \xi&lt;em&gt;ξ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\xi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;O&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;O&lt;/td&gt;
+&lt;td&gt;ο \omicron&lt;em&gt;ο&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\omicron&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Π&lt;/td&gt;
+&lt;td&gt;\Pi&lt;/td&gt;
+&lt;td&gt;π \pi&lt;em&gt;π&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\pi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;P&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;P&lt;/td&gt;
+&lt;td&gt;ρ \rho&lt;em&gt;ρ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\rho&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Σ&lt;/td&gt;
+&lt;td&gt;\Sigma&lt;/td&gt;
+&lt;td&gt;σ \sigma&lt;em&gt;σ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\sigma&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;T&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;T&lt;/td&gt;
+&lt;td&gt;τ \tau&lt;em&gt;τ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\tau&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Υ&lt;/td&gt;
+&lt;td&gt;\Upsilon&lt;/td&gt;
+&lt;td&gt;υ \upsilon&lt;em&gt;υ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\upsilon&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Φ&lt;/td&gt;
+&lt;td&gt;\Phi&lt;/td&gt;
+&lt;td&gt;ϕ \phi&lt;em&gt;ϕ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\phi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;φ \varphi&lt;em&gt;φ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\varphi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;X&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;X&lt;/td&gt;
+&lt;td&gt;χ \chi&lt;em&gt;χ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\chi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ψ&lt;/td&gt;
+&lt;td&gt;\Psi&lt;/td&gt;
+&lt;td&gt;ψ \psi&lt;em&gt;ψ&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\psi&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ω&lt;/td&gt;
+&lt;td&gt;\Omega&lt;/td&gt;
+&lt;td&gt;ω \omega&lt;em&gt;ω&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;\omega&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    
+    <item>
+      <title>Punctuation marks words</title>
+      <link>https://guoruizhong.github.io/post/post/punctuation_marks/</link>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/post/post/punctuation_marks/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;Full Stop / Period (.)&lt;/li&gt;
+&lt;li&gt;Comma (,)&lt;/li&gt;
+&lt;li&gt;Question Mark (?)&lt;/li&gt;
+&lt;li&gt;Exclamation Mark (!)&lt;/li&gt;
+&lt;li&gt;Quotation Marks / Speech Marks (” “)&lt;/li&gt;
+&lt;li&gt;Apostrophe (‘)&lt;/li&gt;
+&lt;li&gt;Hyphen (-)&lt;/li&gt;
+&lt;li&gt;Dash (– or —)&lt;/li&gt;
+&lt;li&gt;Colon (:)&lt;/li&gt;
+&lt;li&gt;Semicolon (;)&lt;/li&gt;
+&lt;li&gt;Parentheses ()&lt;/li&gt;
+&lt;li&gt;Brackets []&lt;/li&gt;
+&lt;li&gt;Ellipsis (…)&lt;/li&gt;
+&lt;li&gt;Slash (/)&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

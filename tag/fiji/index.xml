@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fiji | </title>
+    <link>https://guoruizhong.github.io/tag/fiji/</link>
+      <atom:link href="https://guoruizhong.github.io/tag/fiji/index.xml" rel="self" type="application/rss+xml" />
+    <description>Fiji</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://guoruizhong.github.io/media/icon_huecb05cd9522e49eb64e3268b1f605901_18061_512x512_fill_lanczos_center_3.png</url>
+      <title>Fiji</title>
+      <link>https://guoruizhong.github.io/tag/fiji/</link>
+    </image>
+    
+    <item>
+      <title>Crop image and add scale bar with ImageJ/Fiji</title>
+      <link>https://guoruizhong.github.io/post/post/crop_image_with-_imagej/</link>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://guoruizhong.github.io/post/post/crop_image_with-_imagej/</guid>
+      <description>&lt;h3 id=&#34;crop-images-to-a-given-physical-size&#34;&gt;Crop images to a given physical size&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Edit -&amp;gt; Selection -&amp;gt; Specify&lt;/li&gt;
+&lt;li&gt;image -&amp;gt; Crop&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;https://i.loli.net/2021/06/06/JZyi2dPv8UHBqSf.png&#34;  /&gt;
+&lt;h3 id=&#34;crop-same-area-from-different-images&#34;&gt;Crop same area from different images&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Select the area on the first image&lt;/li&gt;
+&lt;li&gt;Analyze -&amp;gt; Tools -&amp;gt; ROI manager -&amp;gt; Add [t]&lt;/li&gt;
+&lt;li&gt;Click the second image, select and click the parameters on the ROI manager&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;https://i.loli.net/2021/06/06/KQEerVOzL5RiaFh.png&#34;  /&gt;
+&lt;h3 id=&#34;set-scale-and-add-scale-bar&#34;&gt;Set scale and add scale bar&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Analyze -&amp;gt; Set Scale (5uM = 16 pixels, if exported as 4x, then 5uM = 64 pixels)&lt;/li&gt;
+&lt;li&gt;Analyze -&amp;gt; Tools -&amp;gt; Scale bar&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;https://i.loli.net/2021/06/06/drEXlwJqaRmubGP.png&#34;  /&gt;
+&lt;img src=&#34;https://i.loli.net/2021/06/06/I9HPjqusgmLyeTh.png&#34;  /&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
